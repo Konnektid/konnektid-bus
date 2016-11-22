@@ -9,7 +9,8 @@
   },
   "scripts": {
     "test": "istanbul cover --include-all-sources --root src/ -x '**/__test__/**' _mocha -- --recursive $(find src -name __test__ -not -path '*/node_modules/*')",
-    "check-coverage": "istanbul check-coverage --statements 80 --branches 70 --functions 60"
+    "check-coverage": "istanbul check-coverage --statements 80 --branches 70 --functions 60",
+    "release": "standard-version"
   },
   "private": true,
   "dependencies": {
@@ -21,6 +22,7 @@
     "istanbul": "^0.3.19",
     "mocha": "^2.3.2",
     "mockery": "^1.4.0",
-    "sinon": "^1.16.1"
+    "sinon": "^1.16.1",
+    "standard-version": "^3.0.0"
   }
 }
