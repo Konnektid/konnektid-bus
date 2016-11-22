@@ -1,0 +1,26 @@
+{
+  "name": "konnektid-bus",
+  "version": "0.0.3",
+  "description": "Konnektid service bus",
+  "author": "Tijn Kersjes <tijn@konnektid.com>",
+  "main": "src/index.js",
+  "bugs": {
+    "url": "http://github.com/MichelVisser/Konnektid/issues"
+  },
+  "scripts": {
+    "test": "istanbul cover --include-all-sources --root src/ -x '**/__test__/**' _mocha -- --recursive $(find src -name __test__ -not -path '*/node_modules/*')",
+    "check-coverage": "istanbul check-coverage --statements 80 --branches 70 --functions 60"
+  },
+  "private": true,
+  "dependencies": {
+    "amqplib": "^0.4.0",
+    "node-uuid": "^1.4.7"
+  },
+  "devDependencies": {
+    "chai": "~1.8.1",
+    "istanbul": "^0.3.19",
+    "mocha": "^2.3.2",
+    "mockery": "^1.4.0",
+    "sinon": "^1.16.1"
+  }
+}
